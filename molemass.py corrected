@@ -1,0 +1,8 @@
+names=["H", "C" , "N" , "O" , "P", "S"]
+masses=[1.00794,12.0107,14.0067,15,9994,30.973761,32.066]
+Dict3=dict(zip(names,masses))
+def molemass (formula):
+    mass=0
+    for a in formula:
+        mass+=Dict3[a]
+    print(mass)
